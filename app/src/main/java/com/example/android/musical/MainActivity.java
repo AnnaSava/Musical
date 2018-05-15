@@ -22,9 +22,20 @@ public class MainActivity extends AppCompatActivity {
         details.setText("Current song");
 
         ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("Just A Song", "Anonymous"));
-        songs.add(new Song("The Second Song", "Anonymous"));
-        songs.add(new Song("La la la", "Mother Nature"));
+        songs.add(new Song(getResources().getString(R.string.song_winter_lullaby),
+                getResources().getString(R.string.artist_songs_from_north_woods)));
+        songs.add(new Song(getResources().getString(R.string.song_wolf_and_bear),
+                getResources().getString(R.string.artist_songs_from_north_woods)));
+        songs.add(new Song(getResources().getString(R.string.song_song_for_spinning),
+                getResources().getString(R.string.artist_songs_from_north_woods)));
+        songs.add(new Song(getResources().getString(R.string.song_licht_der_aeterna),
+                getResources().getString(R.string.artist_asche_und_staub)));
+        songs.add(new Song(getResources().getString(R.string.song_asche_und_staub),
+                getResources().getString(R.string.artist_asche_und_staub)));
+        songs.add(new Song(getResources().getString(R.string.song_flugel_der_krahe),
+                getResources().getString(R.string.artist_asche_und_staub)));
+        songs.add(new Song(getResources().getString(R.string.song_iris_oder_schwert),
+                getResources().getString(R.string.artist_asche_und_staub)));
 
         SongAdapter adapter = new SongAdapter(this, songs);
 
