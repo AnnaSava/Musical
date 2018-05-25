@@ -41,13 +41,22 @@ public class MainActivity extends AppCompatActivity {
         });
 
         TextView artistTextView = (TextView) findViewById(R.id.artists_text);
-
         // Set a click listener on that View
         artistTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent artistIntent = new Intent(MainActivity.this, LibraryActivity.class);
                 startActivity(artistIntent);
+            }
+        });
+
+        TextView aboutTextView = (TextView) findViewById(R.id.about_text);
+        // Set a click listener on that View
+        aboutTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent aboutIntent = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(aboutIntent);
             }
         });
     }
