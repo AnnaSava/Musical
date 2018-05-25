@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 playingView.setText(song.getArtistName() + " - " + song.getSongName());
                 songIntent.putExtra("EXTRA_SONG", song.getSongName());
                 songIntent.putExtra("EXTRA_ARTIST", song.getArtistName());
+                songIntent.putExtra("EXTRA_IMAGE", song.getImageResourceId());
                 startActivity(songIntent);
             }
         });
