@@ -7,10 +7,12 @@ package com.example.android.musical;
 public class Artist {
     private String mArtistName;
     private String mArtistInfo;
+    private int mImageResourceId;
 
-    public Artist(String artistName, String artistInfo) {
+    public Artist(String artistName, String artistInfo, int imageResourceId) {
         mArtistName = artistName;
         mArtistInfo = artistInfo;
+        mImageResourceId = imageResourceId;
     }
 
     public String getArtistName() {
@@ -19,5 +21,9 @@ public class Artist {
 
     public String getArtistInfo() {
         return mArtistInfo;
+    }
+
+    public int getImageResourceId() {
+        return mImageResourceId;
     }
 }
