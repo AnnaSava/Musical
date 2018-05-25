@@ -18,13 +18,7 @@ public class LibraryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
 
-        ArrayList<Artist> artists = new ArrayList<Artist>();
-        artists.add(new Artist( getResources().getString(R.string.artist_songs_from_north_woods),
-                "Anonymous",
-                R.drawable.artist_songs_from_north_woods));
-        artists.add(new Artist( getResources().getString(R.string.artist_asche_und_staub),
-                "Mother Nature",
-                R.drawable.artist_asche_und_staub));
+        ArrayList<Artist> artists = new ArtistRepo(getResources()).getArtists();
 
         ArtistAdapter adapter = new ArtistAdapter(this, artists);
 
