@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -33,6 +34,10 @@ public class SongAdapter extends ArrayAdapter<Song> {
 
         // Get the {@link AndroidFlavor} object located at this position in the list
         Song song = getItem(position);
+
+        // Find the ImageView in the list_item.xml layout with the ID image.
+        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
+        imageView.setImageResource(song.getImageResourceId());
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView songName = (TextView) listItemView.findViewById(R.id.song_text_view);
