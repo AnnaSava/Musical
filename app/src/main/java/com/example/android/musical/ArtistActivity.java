@@ -3,7 +3,10 @@ package com.example.android.musical;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class ArtistActivity extends AppCompatActivity {
 
@@ -25,5 +28,15 @@ public class ArtistActivity extends AppCompatActivity {
         ImageView artistImageView = (ImageView) findViewById(R.id.artist_details_image);
         int imageResourseId = getIntent().getIntExtra("EXTRA_IMAGE", 0);
         artistImageView.setImageResource(imageResourseId);
+
+        ArrayList<Song> songs = new SongRepo(getResources()).getSongsByArtist(artist);
+
+
+
+        SongAdapter adapter = new SongAdapter(this, songs);
+
+        ListView listView = (ListView) findViewById(R.id.artist_songs_list);
+
+        listView.setAdapter(adapter);
     }
 }
