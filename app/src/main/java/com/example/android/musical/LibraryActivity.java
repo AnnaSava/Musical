@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -29,9 +30,13 @@ public class LibraryActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapter, View view, int position, long arg) {
+
+
                 Intent artistIntent = new Intent(LibraryActivity.this, ArtistActivity.class);
 
                 Artist artist = (Artist) adapter.getItemAtPosition(position);
+
+
                 artistIntent.putExtra("EXTRA_ARTIST", artist.getArtistName());
                 startActivity(artistIntent);
             }
