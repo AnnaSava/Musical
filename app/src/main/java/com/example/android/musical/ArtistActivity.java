@@ -1,7 +1,10 @@
 package com.example.android.musical;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -31,12 +34,24 @@ public class ArtistActivity extends AppCompatActivity {
 
         ArrayList<Song> songs = new SongRepo(getResources()).getSongsByArtist(artist);
 
-
-
         SongAdapter adapter = new SongAdapter(this, songs);
 
         ListView listView = (ListView) findViewById(R.id.artist_songs_list);
 
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapter, View view, int position, long arg) {
+                Intent songIntent = new Intent(ArtistActivity.this, DetailsActivity.class);
+
+                Song song = (Song) adapter.getItemAtPosition(position);
+
+                songIntent.putExtra("EXTRA_SONG", song.getSongName());
+                songIntent.putExtra("EXTRA_ARTIST", song.getArtistName());
+                songIntent.putExtra("EXTRA_IMAGE", song.getImageResourceId());
+                startActivity(songIntent);
+            }
+        });
     }
 }
