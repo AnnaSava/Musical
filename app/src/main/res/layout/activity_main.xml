@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
     tools:context="com.example.android.musical.MainActivity">
 
     <LinearLayout
@@ -19,6 +20,8 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:textAllCaps="true"
+            android:background="@color/colorMenuActive"
+            android:textColor="@color/colorMenuTextActive"
             android:text="@string/menu_playlist"/>
 
         <TextView
@@ -29,6 +32,7 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:textAllCaps="true"
+            android:background="@color/colorMenu"
             android:text="@string/menu_artists"/>
 
         <TextView
@@ -39,12 +43,14 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:textAllCaps="true"
+            android:background="@color/colorMenu"
             android:text="@string/menu_about"/>
     </LinearLayout>
 
     <ListView
         android:id="@+id/list"
         android:orientation="vertical"
+        android:layout_marginTop="4dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

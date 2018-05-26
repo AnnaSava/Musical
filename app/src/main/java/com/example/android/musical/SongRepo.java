@@ -1,7 +1,6 @@
 package com.example.android.musical;
 
 import android.content.res.Resources;
-import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
 
@@ -35,6 +34,30 @@ public class SongRepo {
         songs.add(new Song(res.getString(R.string.song_iris_oder_schwert),
                 res.getString(R.string.artist_asche_und_staub),
                 R.drawable.artist_asche_und_staub));
+        songs.add(new Song(res.getString(R.string.song_rune_stone),
+                res.getString(R.string.artist_manticore),
+                R.drawable.artist_manticore));
+        songs.add(new Song(res.getString(R.string.song_something_between_trees),
+                res.getString(R.string.artist_manticore),
+                R.drawable.artist_manticore));
+        songs.add(new Song(res.getString(R.string.song_emerald_eyes),
+                res.getString(R.string.artist_manticore),
+                R.drawable.artist_manticore));
+        songs.add(new Song(res.getString(R.string.song_amethyst),
+                res.getString(R.string.artist_manticore),
+                R.drawable.artist_manticore));
+        songs.add(new Song(res.getString(R.string.song_wolf_step),
+                res.getString(R.string.artist_night_ride),
+                R.drawable.artist_night_ride));
+        songs.add(new Song(res.getString(R.string.song_bones),
+                res.getString(R.string.artist_night_ride),
+                R.drawable.artist_night_ride));
+        songs.add(new Song(res.getString(R.string.song_day_song),
+                res.getString(R.string.artist_night_ride),
+                R.drawable.artist_night_ride));
+        songs.add(new Song(res.getString(R.string.song_shadows_after_dark),
+                res.getString(R.string.artist_night_ride),
+                R.drawable.artist_night_ride));
     }
 
     public ArrayList<Song> getSongs() {

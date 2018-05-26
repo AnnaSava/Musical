@@ -33,8 +33,6 @@ public class LibraryActivity extends AppCompatActivity {
 
                 Artist artist = (Artist) adapter.getItemAtPosition(position);
                 artistIntent.putExtra("EXTRA_ARTIST", artist.getArtistName());
-                artistIntent.putExtra("EXTRA_INFO", artist.getArtistInfo());
-                artistIntent.putExtra("EXTRA_IMAGE", artist.getImageResourceId());
                 startActivity(artistIntent);
             }
         });

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bgabout"
     tools:context="com.example.android.musical.AboutActivity">
 
     <TextView
@@ -12,6 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
+        android:textColor="@color/colorText"
+        android:textSize="16sp"
         android:text="@string/about_songs"/>
 
     <TextView
@@ -19,6 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
+        android:textColor="@color/colorText"
+        android:textSize="16sp"
         android:text="@string/about_app"/>
 
     <TextView
@@ -26,6 +31,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
+        android:textColor="@color/colorText"
+        android:textSize="16sp"
         android:text="@string/about_date"/>
 
 </LinearLayout>

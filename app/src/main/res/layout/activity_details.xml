@@ -5,12 +5,15 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:background="@color/colorPlayingBackground"
     tools:context="com.example.android.musical.DetailsActivity">
 
     <ImageView
         android:id="@+id/details_image"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_margin="16dp"
         android:layout_gravity="center_horizontal"/>
 
     <TextView
@@ -18,6 +21,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:textSize="22sp"
+        android:textColor="@color/colorSong"
+        android:layout_marginTop="16dp"
         tools:text="Song Name"/>
 
     <TextView
@@ -25,6 +31,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorSongArtist"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
         tools:text="Artist Name"/>
 
     <LinearLayout
@@ -36,16 +45,19 @@
             android:id="@+id/skip_prev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:src="@drawable/ic_skip_prev"/>
         <ImageView
             android:id="@+id/play_pause"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:src="@drawable/ic_pause"/>
         <ImageView
             android:id="@+id/skip_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:src="@drawable/ic_skip_next"/>
     </LinearLayout>
 </LinearLayout>

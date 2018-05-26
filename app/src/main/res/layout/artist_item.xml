@@ -3,16 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/artist_image"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:layout_height="100dp" />
 
     <TextView
         android:id="@+id/artist_name_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="4dp"
         tools:text="song"/>
 </LinearLayout>

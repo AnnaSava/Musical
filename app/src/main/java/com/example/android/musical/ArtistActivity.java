@@ -20,19 +20,19 @@ public class ArtistActivity extends AppCompatActivity {
 
         TextView artistTextView = (TextView) findViewById(R.id.artist_title);
 
-        String artist = getIntent().getStringExtra("EXTRA_ARTIST");
-        artistTextView.setText(artist);
+        String artistName = getIntent().getStringExtra("EXTRA_ARTIST");
+        artistTextView.setText(artistName);
+
+        Artist artist = new ArtistRepo(getResources()).getArtistByName(artistName);
 
         TextView infoTextView = (TextView) findViewById(R.id.artist_details_info);
 
-        String info = getIntent().getStringExtra("EXTRA_INFO");
-        infoTextView.setText(info);
+        infoTextView.setText(artist.getArtistInfo());
 
         ImageView artistImageView = (ImageView) findViewById(R.id.artist_details_image);
-        int imageResourseId = getIntent().getIntExtra("EXTRA_IMAGE", 0);
-        artistImageView.setImageResource(imageResourseId);
+        artistImageView.setImageResource(artist.getImageResourceId());
 
-        ArrayList<Song> songs = new SongRepo(getResources()).getSongsByArtist(artist);
+        ArrayList<Song> songs = new SongRepo(getResources()).getSongsByArtist(artistName);
 
         SongAdapter adapter = new SongAdapter(this, songs);
 

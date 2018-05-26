@@ -5,19 +5,42 @@
     <string name="menu_artists">Artists</string>
     <string name="menu_about">About</string>
 
+    <string name="label_playlist">Playlist</string>
+    <string name="label_playing">Now playing</string>
+    <string name="label_artists">Artists</string>
+    <string name="label_artist">Artist</string>
+    <string name="label_about">About</string>
+
     <string name="about_app">The app is created as a learning project in Udacity by AnnaSava.</string>
     <string name="about_songs">In this app the songs of the world of Gray Lands are collected. The world and the songs belong to their author Aneily Stranger.</string>
     <string name="about_date">May, 2018</string>
 
     <string name="artist_songs_from_north_woods">Songs From North Woods</string>
     <string name="artist_asche_und_staub">Asche und Staub</string>
+    <string name="artist_manticore">Manticore</string>
+    <string name="artist_night_ride">Night Ride</string>
 
     <string name="song_winter_lullaby">Winter lullaby</string>
     <string name="song_wolf_and_bear">Wolf and bear</string>
     <string name="song_song_for_spinning">Song for spinning</string>
+
     <string name="song_licht_der_aeterna">Licht der Aeterna</string>
     <string name="song_flugel_der_krahe">Flügel der Krähe</string>
     <string name="song_asche_und_staub">Asche und Staub</string>
     <string name="song_iris_oder_schwert">Iris oder Schwert</string>
 
+    <string name="song_rune_stone">Rune Stone</string>
+    <string name="song_something_between_trees">Something Between Trees</string>
+    <string name="song_emerald_eyes">Emerald Eyes</string>
+    <string name="song_amethyst">Amethyst</string>
+
+    <string name="song_wolf_step">Wolf step</string>
+    <string name="song_bones">Bones</string>
+    <string name="song_day_song">Day Song</string>
+    <string name="song_shadows_after_dark">Shadows After Dark</string>
+
+    <string name="info_songs_from_north_woods">It\'s a young folk-rock group, with a lot ethnic themes from wolf\'s and bear\'s clans. Sounds of flute and viola da gambra dominate. Some songs are performed a Cappella.</string>
+    <string name="info_asche_und_staub">This group was founded a several time ago, but is not famous over boundary of Tergars Empire. They started from gothic rock, but now play sympho and atmospheric black, with male and female vocals.</string>
+    <string name="info_manticore">The trio from Manticore clan of virvy. Their music is between of psychedelic rock and post-punk. All texts are based on tales and creepy stories.</string>
+    <string name="info_night_ride">The an-tekke band playing folk-metal. They haven\'t constant structure of group and play with many session musicians. So the same song may sound very different.</string>
 </resources>

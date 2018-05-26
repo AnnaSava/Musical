@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#494949</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorMenu">#9b9df3</color>
+    <color name="colorMenuActive">#5c49d0</color>
+    <color name="colorMenuTextActive">#eee</color>
+    <color name="colorMainBackground">#c6cbd1</color>
+    <color name="colorPlayingBackground">#282828</color>
+    <color name="colorHeader">#5c49d0</color>
+    <color name="colorSong">#9b9df3</color>
+    <color name="colorSongArtist">#eee</color>
+    <color name="colorText">#444</color>
 </resources>
