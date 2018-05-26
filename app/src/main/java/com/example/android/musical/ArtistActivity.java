@@ -29,9 +29,6 @@ public class ArtistActivity extends AppCompatActivity {
 
         infoTextView.setText(artist.getArtistInfo());
 
-        ImageView artistImageView = (ImageView) findViewById(R.id.artist_details_image);
-        artistImageView.setImageResource(artist.getImageResourceId());
-
         ArrayList<Song> songs = new SongRepo(getResources()).getSongsByArtist(artistName);
 
         SongAdapter adapter = new SongAdapter(this, songs);
