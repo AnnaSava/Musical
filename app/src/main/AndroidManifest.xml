@@ -9,21 +9,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" android:label="@string/label_playlist">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/label_playlist">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailsActivity"
-            android:label="@string/label_playing" />
-        <activity android:name=".ArtistActivity"
-            android:label="@string/label_artist"/>
-        <activity android:name=".LibraryActivity"
-            android:label="@string/label_artists"/>
-        <activity android:name=".AboutActivity"
-            android:label="@string/label_about"/>
+        <activity
+            android:name=".DetailsActivity"
+            android:label="@string/label_playing">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musical.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ArtistActivity"
+            android:label="@string/label_artist">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musical.LibraryActivity" />
+        </activity>
+        <activity
+            android:name=".LibraryActivity"
+            android:label="@string/label_artists">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musical.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/label_about">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musical.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
